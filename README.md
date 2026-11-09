@@ -10,7 +10,6 @@ Static portfolio website built with HTML, CSS, and JavaScript.
 - `crud.html` - CRUD System project
 - `pos.html` - POS / Kasir project
 - `analisis.html` - Analisis Data project
-
 The project pages and their assets are kept in the repository root and existing asset folders so their relative links continue to work.
 
 ## Deploy to Vercel
