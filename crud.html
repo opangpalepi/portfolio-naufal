@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>CRUD System - Naufal Portfolio Website</title>
+</head>
+<body>
+   <div id="lightbox" class="lightbox">
+      <button class="lightbox-close" aria-label="Tutup">&times;</button>
+      <button class="lightbox-nav lightbox-prev" aria-label="Gambar sebelumnya"><i class="ri-arrow-left-line"></i></button>
+      <img id="lightbox-img" alt="">
+      <button class="lightbox-nav lightbox-next" aria-label="Gambar berikutnya"><i class="ri-arrow-right-line"></i></button>
+      <span class="lightbox-count" id="lightbox-count"></span>
+   </div>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="index.html" class="nav__logo">PORTOFOLIO</a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+               <li class="nav__item"><a href="index.html#work" class="nav__link active-link">Work</a></li>
+               <li class="nav__item"><a href="index.html#info" class="nav__link">My Info</a></li>
+               <li class="nav__item"><a href="index.html#services" class="nav__link">Services</a></li>
+               <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact Me</a></li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-function-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== PROJECT HERO ====================-->
+      <section class="project section" id="project">
+         <div class="project__container container">
+            <a href="index.html#work" class="circle-btn circle-btn--prev project__back" aria-label="Kembali ke Recent Works" title="Kembali ke Recent Works">
+               <i class="ri-arrow-left-line"></i>
+            </a>
+
+            <div class="project__hero">
+               <div class="project__head">
+                  <span class="project__tag">Project 03 / 05</span>
+                  <h1 class="project__title">CRUD System</h1>
+               </div>
+
+               <div class="slider" id="slider" tabindex="0" aria-roledescription="carousel" aria-label="Galeri CRUD System"
+                    data-folder="sim/" data-images="sim-1.png,sim-2.png,sim-3.png,sim-4.png,sim-5.png,sim-6.png,sim-7.png" data-alt="CRUD System">
+                  <div class="slider__viewport">
+                     <div class="slider__track" id="slider-track"></div>
+                  </div>
+
+                  <button type="button" class="circle-btn circle-btn--prev slider__btn slider__btn--prev" id="slider-prev" aria-label="Gambar sebelumnya">
+                     <i class="ri-arrow-left-line"></i>
+                  </button>
+                  <button type="button" class="circle-btn circle-btn--next slider__btn slider__btn--next" id="slider-next" aria-label="Gambar berikutnya">
+                     <i class="ri-arrow-right-line"></i>
+                  </button>
+               </div>
+
+               <div class="slider__dots" id="slider-dots"></div>
+               <p class="slider__counter" id="slider-counter"></p>
+
+               <div class="project__intro">
+                  <p class="project__lead">Sistem digitalisasi input dan output data yang memungkinkan pengguna menambah, mengedit, dan menghapus informasi serta melakukan backup dalam database secara akurat tanpa kehilangan data.</p>
+
+                  <div class="project__meta">
+                     <div class="project__meta-item"><span>Kategori</span><strong>Database System</strong></div>
+                     <div class="project__meta-item"><span>Cocok Untuk</span><strong>Pengelolaan Data</strong></div>
+                     <div class="project__meta-item"><span>Tools</span><strong>Visual Studio (VB), Database</strong></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== FEATURES ====================-->
+      <section class="features section" id="features">
+         <h2 class="section__title">FITUR UTAMA</h2>
+
+         <div class="features__container container grid">
+            <article class="features__card">
+               <i class="ri-add-circle-line features__icon"></i>
+               <h3 class="features__title">Create</h3>
+               <p class="features__description">Tambah data baru melalui form input yang terstruktur.</p>
+            </article>
+
+            <article class="features__card">
+               <i class="ri-file-list-3-line features__icon"></i>
+               <h3 class="features__title">Read</h3>
+               <p class="features__description">Tampilkan data dalam tabel yang mudah dicari dan disaring.</p>
+            </article>
+
+            <article class="features__card">
+               <i class="ri-edit-line features__icon"></i>
+               <h3 class="features__title">Update</h3>
+               <p class="features__description">Ubah data yang sudah ada dengan cepat dan aman.</p>
+            </article>
+
+            <article class="features__card">
+               <i class="ri-delete-bin-line features__icon"></i>
+               <h3 class="features__title">Delete</h3>
+               <p class="features__description">Hapus data yang tidak diperlukan dengan konfirmasi terlebih dahulu.</p>
+            </article>
+
+            <article class="features__card">
+               <i class="ri-save-3-line features__icon"></i>
+               <h3 class="features__title">Backup Database</h3>
+               <p class="features__description">Cadangan data berkala agar informasi tetap aman.</p>
+            </article>
+
+            <article class="features__card">
+               <i class="ri-shield-check-line features__icon"></i>
+               <h3 class="features__title">Validasi Data</h3>
+               <p class="features__description">Pemeriksaan input untuk mencegah data salah atau hilang.</p>
+            </article>
+         </div>
+      </section>
+
+      <!--==================== TECH ====================-->
+      <section class="tech section" id="tech">
+         <h2 class="section__title">TOOLS &amp; TEKNOLOGI</h2>
+
+         <div class="tech__list container">
+            <span class="tech__tag">Visual Studio (VB)</span>
+            <span class="tech__tag">Database</span>
+            <span class="tech__tag">ERD</span>
+            <span class="tech__tag">Draw.io</span>
+            <span class="tech__tag">CRUD</span>
+         </div>
+
+         <!-- Previous / Next project -->
+         <div class="project-nav container">
+            <a href="erp.html" class="circle-btn circle-btn--prev" aria-label="Sebelumnya: ERP" title="Sebelumnya: ERP">
+               <i class="ri-arrow-left-line"></i>
+            </a>
+            <a href="pos.html" class="circle-btn circle-btn--next" aria-label="Berikutnya: POS / Kasir" title="Berikutnya: POS / Kasir">
+               <i class="ri-arrow-right-line"></i>
+            </a>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container">
+
+
+         <span class="footer__copy">&#169; All Rights Reserved By M.Naufal Fahlevi</span>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="assets/js/scroolreveal.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+</html>

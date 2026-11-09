@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Company Profile - Naufal Portfolio Website</title>
+</head>
+
+<body>
+<div id="lightbox" class="lightbox">
+   <button class="lightbox-close" aria-label="Tutup">&times;</button>
+   <button class="lightbox-nav lightbox-prev" aria-label="Gambar sebelumnya"><i class="ri-arrow-left-line"></i></button>
+   <img id="lightbox-img" alt="">
+   <button class="lightbox-nav lightbox-next" aria-label="Gambar berikutnya"><i class="ri-arrow-right-line"></i></button>
+   <span class="lightbox-count" id="lightbox-count"></span>
+</div>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="index.html" class="nav__logo">PORTOFOLIO</a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+               <li class="nav__item"><a href="index.html#work" class="nav__link active-link">Work</a></li>
+               <li class="nav__item"><a href="index.html#info" class="nav__link">My Info</a></li>
+               <li class="nav__item"><a href="index.html#services" class="nav__link">Services</a></li>
+               <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact Me</a></li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-function-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== PROJECT HERO ====================-->
+      <section class="project section" id="project">
+         <div class="project__container container">
+            <a href="index.html#work" class="circle-btn circle-btn--prev project__back" aria-label="Kembali ke Recent Works" title="Kembali ke Recent Works">
+               <i class="ri-arrow-left-line"></i>
+            </a>
+
+            <div class="project__hero">
+               <div class="project__head">
+                  <span class="project__tag">Project 01 / 05</span>
+                  <h1 class="project__title">Company Profile</h1>
+               </div>
+
+               <!-- IMAGE SLIDER (3 gambar, geser otomatis) -->
+<div class="slider" id="slider" tabindex="0" aria-roledescription="carousel" aria-label="Galeri Company Profile"
+     data-folder="company-profile/" data-prefix="cp-" data-ext="png" data-count="13" data-alt="Company Profile">
+   <div class="slider__viewport">
+      <div class="slider__track" id="slider-track"></div>
+   </div>
+
+   <button type="button" class="circle-btn circle-btn--prev slider__btn slider__btn--prev" id="slider-prev" aria-label="Gambar sebelumnya">
+      <i class="ri-arrow-left-line"></i>
+   </button>
+   <button type="button" class="circle-btn circle-btn--next slider__btn slider__btn--next" id="slider-next" aria-label="Gambar berikutnya">
+      <i class="ri-arrow-right-line"></i>
+   </button>
+</div>
+
+<div class="slider__dots" id="slider-dots"></div>
+<p class="slider__counter" id="slider-counter"></p>
+               <div class="project__intro">
+                  <p class="project__lead">Website penunjang awal bisnis/organisasi untuk memperkenalkan produk atau layanan yang ditawarkan. Mencakup informasi dasar tentang perusahaan dengan harapan jangkauan yang lebih luas, cukup untuk UMKM maupun bisnis corporate yang memerlukan platform digital.</p>
+
+                  <div class="project__meta">
+                     <div class="project__meta-item"><span>Kategori</span><strong>Web Development</strong></div>
+                     <div class="project__meta-item"><span>Cocok Untuk</span><strong>UMKM &amp; Corporate</strong></div>
+                     <div class="project__meta-item"><span>Tools</span><strong>HTML, CSS, JavaScript</strong></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== FEATURES ====================-->
+      <section class="features section" id="features">
+         <h2 class="section__title">FITUR UTAMA</h2>
+
+         <div class="features__container container grid">
+            <article class="features__card">
+               <i class="ri-home-4-line features__icon"></i>
+               <h3 class="features__title">Halaman Beranda</h3>
+               <p class="features__description">Tampilan pertama yang memperkenalkan identitas dan nilai utama perusahaan.</p>
+            </article>
+
+            <article class="features__card">
+               <i class="ri-building-line features__icon"></i>
+               <h3 class="features__title">Profil Perusahaan</h3>
+               <p class="features__description">Sejarah, visi misi, dan informasi dasar tentang bisnis atau organisasi.</p>
+            </article>
+
+            <article class="features__card">
+               <i class="ri-store-2-line features__icon"></i>
+               <h3 class="features__title">Produk &amp; Layanan</h3>
+               <p class="features__description">Katalog singkat produk atau layanan yang ditawarkan kepada calon pelanggan.</p>
+            </article>
+
+            <article class="features__card">
+               <i class="ri-map-pin-line features__icon"></i>
+               <h3 class="features__title">Kontak &amp; Lokasi</h3>
+               <p class="features__description">Informasi kontak, alamat, dan form pesan agar mudah dihubungi.</p>
+            </article>
+
+            <article class="features__card">
+               <i class="ri-smartphone-line features__icon"></i>
+               <h3 class="features__title">Responsif</h3>
+               <p class="features__description">Tampilan menyesuaikan perangkat mobile, tablet, dan desktop.</p>
+            </article>
+
+            <article class="features__card">
+               <i class="ri-search-eye-line features__icon"></i>
+               <h3 class="features__title">Siap SEO</h3>
+               <p class="features__description">Struktur halaman yang rapi agar lebih mudah ditemukan di mesin pencari.</p>
+            </article>
+         </div>
+      </section>
+
+      <!--==================== TECH ====================-->
+      <section class="tech section" id="tech">
+         <h2 class="section__title">TOOLS &amp; TEKNOLOGI</h2>
+
+         <div class="tech__list container">
+            <span class="tech__tag">HTML</span>
+            <span class="tech__tag">CSS</span>
+            <span class="tech__tag">JavaScript</span>
+            <span class="tech__tag">Responsive Design</span>
+            <span class="tech__tag">SEO</span>
+            <span class="tech__tag">Hostinger</span>
+         </div>
+
+         <!-- Previous / Next project -->
+         <div class="project-nav container">
+            <a href="analisis.html" class="circle-btn circle-btn--prev" aria-label="Sebelumnya: Analisis Data" title="Sebelumnya: Analisis Data">
+               <i class="ri-arrow-left-line"></i>
+            </a>
+            <a href="erp.html" class="circle-btn circle-btn--next" aria-label="Berikutnya: ERP" title="Berikutnya: ERP">
+               <i class="ri-arrow-right-line"></i>
+            </a>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container">
+
+
+         <span class="footer__copy">&#169; All Rights Reserved By M.Naufal Fahlevi</span>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="assets/js/scroolreveal.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+   
+</body>
+</html>

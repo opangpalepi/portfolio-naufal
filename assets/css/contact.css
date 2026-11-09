@@ -1,0 +1,41 @@
+/* Tambahan untuk form kontak. Muat SETELAH styles.css */
+.contact__hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact__input.is-invalid {
+  border-color: #e5484d;
+  box-shadow: 0 0 0 2px rgba(229, 72, 77, .25);
+}
+
+.contact__message { min-height: 1.25rem; font-size: .875rem; }
+.contact__message.is-error { color: #e5484d; }
+.contact__message.is-ok { color: #2f9e6b; }
+
+.contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+.contact__actions .contact__button {
+  flex: 1 1 12rem;
+  justify-content: center;
+}
+
+.contact__bot {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid #2f9e6b;
+  border-radius: .5rem;
+  background: rgba(47, 158, 107, .1);
+  font-size: .9rem;
+  line-height: 1.5;
+}
+.contact__bot[hidden] { display: none; }
+.contact__bot ul { margin: .5rem 0; padding-left: 1.1rem; list-style: disc; }
+.contact__bot p { margin: .35rem 0; }
