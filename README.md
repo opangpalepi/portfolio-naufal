@@ -15,4 +15,4 @@ The project pages and their assets are kept in the repository root and existing 
 
 ## Deploy to Vercel
 
-Import this repository in Vercel and use the **Other** framework preset. No build or install command is required. Set the output directory to `.` (the project root), then deploy.
+Import this repository in Vercel and use the **Other** framework preset. No build or install command is required. Set the output directory to `.` (the project root), then deploy. `vercel.json` enables clean URLs, so project pages are served without the `.html` suffix.
